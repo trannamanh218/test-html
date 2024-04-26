@@ -4,6 +4,7 @@
   padding: 0px !important;
   position: relative;
   height: 2000px;
+  margin-bottom: 200px;
 }
 .header__navbar {
   display: flex;
@@ -127,10 +128,10 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
-  margin: 0px 200px;
+  margin-left: 200px;
 }
 .box__left__about {
-  width: 43%;
+  width: 400px;
 }
 .center__img {
   max-width: 510px;
@@ -157,7 +158,7 @@ img {
   width: fit-content;
 }
 .text__about {
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 .img__right {
   width: 135px;
@@ -168,14 +169,20 @@ img {
 
 .box__right__about {
   position: relative;
+  width: 60%;
 }
 .img__one,
 .img__two {
   position: absolute;
   width: 120px;
+  z-index: 1000;
+}
+.img__one {
+  right: 40px;
 }
 .img__two {
-  bottom: 68px;
+  bottom: 0px;
+  right: 150px;
 }
 .img__right {
   animation: moveUp 2s infinite alternate;
@@ -186,7 +193,16 @@ img {
 .img__two {
   animation: moveLeft 4s infinite alternate;
 }
+.center {
+  background: none !important;
+}
+.slick-slide {
+  /* transform: rotate(-135deg);
+    transition: all ease 1s;
+    box-shadow: none !important; */
+    /* padding-right: 40px; */
 
+}
 @keyframes moveUp {
   0% {
     transform: translateY(0);
